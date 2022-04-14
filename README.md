@@ -1,2 +1,0 @@
-# CDM Final Project: Website for Gretchen's Hair Salon
-Here is where I will be putting the files for a new website I am making. This website is for clients and prespective clients who wish to learn more about the salon and its services and products. It will also be a place where regular clients can schedule an appointment. The website will have a mobile-friendly layout so more users can reach it. It may also have a dark mode layout to make the site more accessible to different types of users. 
