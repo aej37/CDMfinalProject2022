@@ -1,59 +1,183 @@
 <!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel='stylesheet' href='styles.css'/>
+    <title>Appointment Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div class='nav'>
-     <a href = 'index.html' >home</a>   |
-     <a href = 'services.html' >   services </a>  |
-     <a href = 'appt.html' >  appointments </a>  |
-     <a href = 'products.html' >  products</a>  |
-   </div>
-   <h1 id='title'>Appointments</h1>
-</head>
-<body>
- <div>
-    <p style="font-family:Verdana; font-size:12px; color:#4d4d4d">
-      Hello! When scheduling appointment, please select a range of time that fits the time needed for your service. This
-     gives the stylist the proper amount of time so they can transform you into your most beautiful self!
-      Hair Cut: 30 MINUTES
-      Hair Color: 1 HOUR
-      Hair Cut and Style: 1 HOUR
-      Hair Cut and Color: 2 HOURS AND 30 MINUTES
-      Hair Cut, Color and Style: 3 HOURS
-      Perm: TWO HOURS
-      Manicure: 30 MINUTES
-      Pedicure: 1 HOUR
+    <nav class="navbar navbar-expand-lg nav-back fixed-top"
+    id="mainNav">
+      <div class="container">
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link"
+                  href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                    href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                      href="appt.html">Appointments</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                    href="products.html">Products</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 
-     </p>
-       </div>
+<!-- End Header -->
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <h1>24/7 Care is available</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, deleniti.</h2>
+      <a href="#about" class="main-btn">Get Started</a>
+    </div>
+  </section>
+  <!-- End Hero -->
+  <div class="container mt-4 p-4">
+      <div class="row">
+          <div class="col-md-6">
+              <h2 class="text-center my-4">
+                  Schedule Consultation
+              </h2>
+              <form>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-lg-4">
+                          First and Last Name
+                      </label>
+                      <div class="col-sm-8 col-lg-8">
+                          <input type="text"id="patient-name"class="form-control"
+                          placeholder="Name"required>
+                      </div>
+                  </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Contact
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="tel"id="contact"class="form-control"
+                        placeholder="123"required>
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                      Date
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="date"id="date"class="form-control">
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Time
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="time"id="time"class="form-control">
+                       </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Describe Hair Type and What You Would Like Done
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <textarea id="symptoms" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row justify-content-end">
+                    <div class="col-sm-5">
+                        <button type="submit"class="btn btn-form">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
 
-       <div style="float: left;">
-     <div style="margin-top: 10px;">
-       <div id="datePicker" style="height: 25px; display: inline-block; margin-bottom: 10px">
-       </div>
-       <button onclick="group(1)">
-					Choose Stylist</button>
-     </div>
-   </div>
-
-
- <div id="content" style="top: 90px; bottom: 24px;">
-   <div style="position: absolute; top: 240px; width: 100%; height: 100%;">
-     <div id="calendar" style="height: 100%; width: 100%;">
-     </div>
-   </div>
- </div>
-
- <script src="MindFusion.Scheduling.js" type="text/javascript"></script>
- <script src="AppointmentSchedule.js" type="text/javascript"></script>
- <script type="text/javascript" src="../common/samples.js"></script>
-<body>
+              </form>
+          </div>
+          <div class="col-md-6">
+              <h2 id="services" class="text-center my-4"></h2>
+              <ul id="consultations"class="list-group"></ul>
+          </div>
+      </div>
+  </div>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer-->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-back btn-social mx-2" href="#!">
+                  <i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-back btn-social mx-2" href="#!">
+                    <i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-back btn-social mx-2" href="#!">
+                      <i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+              <a class="mr-3 text" href="#!">Privacy Policy</a>
+              <a href="#!"class="text">Terms of Use</a></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
