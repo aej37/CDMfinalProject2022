@@ -92,11 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                     ConsultationHTML.innerHTML = `
-                         <p class="font-weight-bold">Patient Name:  <span class="font-weight-normal">${cursor.value.patientname}<span></p>
+                         <p class="font-weight-bold">Client Name:  <span class="font-weight-normal">${cursor.value.patientname}<span></p>
                           <p class="font-weight-bold">Contact:  <span class="font-weight-normal">${cursor.value.contact}<span></p>
                          <p class="font-weight-bold">Date:  <span class="font-weight-normal">${cursor.value.date}<span></p>
                          <p class="font-weight-bold">Time:  <span class="font-weight-normal">${cursor.value.time}<span></p>
-                         <p class="font-weight-bold">Symptoms:  <span class="font-weight-normal">${cursor.value.symptoms}<span></p>
+                         <p class="font-weight-bold">Hair Info:  <span class="font-weight-normal">${cursor.value.symptoms}<span></p>
                     `;
 
 
@@ -112,13 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     cursor.continue();
                } else {
                     if(!consultations.firstChild) {
-                        services.textContent = 'Change your visiting hours';
+                        services.textContent = 'Change your appointment request';
                          let noSchedule = document.createElement('p');
                          noSchedule.classList.add('text-center');
                          noSchedule.textContent = 'No results Found';
                       consultations.appendChild(noSchedule);
                     } else {
-                        services.textContent = 'Cancel Your consultations'
+                        services.textContent = 'Cancel your appointment request'
                     }
                }
           }
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                if(!consultations.firstChild) {
 
-                    services.textContent = 'Change your visiting hours';
+                    services.textContent = 'Change your appointment';
 
                    let noSchedule = document.createElement('p');
 
