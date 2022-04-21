@@ -41,3 +41,7 @@ form, .form-group{
 .navbar-icon{
   background-image:url(images/icon.png);
 }
+
+section{
+  padding-top: 60px;
+}
