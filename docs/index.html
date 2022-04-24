@@ -26,20 +26,35 @@
                     href="appt.html">Appointments</a></li>
               </ul>
           </div>
+          <button onclick="darkMode()">Darkmode</button>
+          <button onclick="lightMode()">LightMode</button>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
       </div>
     </nav>
 
    <header>
      <img src="images/header.jpg" class='header-img' alt="Salon" height="600"width="1400"</img>
      <div class ='hcontent'>
-     <h1>Welcome to Gretchen's Hair Salon</h1>
-     <h2> Call today at <a href = "tel:(570) 326-4900" class='number'>570-326-4900</a></h2>
-    <h2>Schedule a<a href = 'appt.html' class='appt'> Consultation</a></h2>
+     <h1 class='title'>Welcome to Gretchen's Hair Salon</h1>
+     <h2 class = 'title2'> Call today at <a href = "tel:(570) 326-4900" class='number'>570-326-4900</a></h2>
+    <h2 clss ='title2'>Schedule a<a href = 'appt.html' class='appt'> Consultation</a></h2>
    </div>
 
 
  </header>
-
 
  <section class="section2">
       <div class = "heading">
@@ -48,9 +63,9 @@
       </div>
       <div class='sales-row'>
         <div class ="info">
-        <img src="images/chi_hs.png" alt="Chi Hair Spray" width="250" height='250'</img>
-        <p>Chi Hair Spray</p>
-          <strike class= 'og-price'>15.00</strike> <p class = 'sale'> 12.00</p>
+        <img src="images/dsc.png" alt="Dollar Shave Club Gel" width="250" height='250'</img>
+        <p>Dollar Shave Club Gel</p>
+          <strike class= 'og-price'>15.00</strike> <p class = 'sale'> 10.00</p>
       </div>
       <div class= "info">
         <img src="images/10.png" alt="It's A 10 Set" width='250' height='250'</img>
@@ -89,8 +104,8 @@ Monday Closed</p>
 </section>
 
    <!-- Footer-->
-   <footer class="footer py-4 mt-5">
-             Copyright © Gretchen's Hair Salon 2022
+   <footer>
+          <p> Copyright © Gretchen's Hair Salon 2022 </p>
 
  </footer>
 

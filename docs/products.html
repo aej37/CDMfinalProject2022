@@ -26,11 +26,92 @@
                     href="appt.html">Appointments</a></li>
               </ul>
           </div>
+              <button onclick="darkMode()">Darkmode</button>
+              <button onclick="lightMode()">LightMode</button>
+              <script>
+                function darkMode() {
+                  var element = document.body;
+                  var content = document.getElementById("DarkModetext");
+                  element.className = "dark-mode";
+                  content.innerText = "Dark Mode is ON";
+                }
+                function lightMode() {
+                  var element = document.body;
+                  var content = document.getElementById("DarkModetext");
+                  element.className = "light-mode";
+                  content.innerText = "Dark Mode is OFF";
+                }
+              </script>
       </div>
     </nav>
 
+
   <section>
-  <img src="images/chi_hs.png" alt="Chi Hair Spray"</img>
+
+    <div class = "heading">
+      <h3>Products</h3>
+      <h4>Only available in person!</h4>
+    </div>
+
+    <div class='sales-row'>
+      <div class ="info">
+      <img src="images/dsc.png" alt="Dollar Shave Club Gel" width="250" height='250'</img>
+      <p>Dollar Shave Club Gel</p>
+        <strike class= 'og-price'>15.00</strike> <p class = 'sale'> 10.00</p>
+    </div>
+    <div class= "info">
+      <img src="images/10.png" alt="It's A 10 Set" width='250' height='250'</img>
+      <p>It's a 10 Hair Cair Set</p>
+        <strike class= 'og-price'>45.00</strike> <p class = 'sale'> 25.00</p>
+    </div>
+    <div class = 'info'>
+      <img src="images/tresemme.png" alt="Tresemme Shampoo" width='250' height='250'</img>
+      <p>TREsemme Shampoo</p>
+      <strike class= 'og-price'>15.99</strike> <p class = 'sale'> 11.00</p>
+
+    </div>
+    <div class = 'info'>
+      <img src="images/argan.png" alt="Argan Hair Set" width='250' height='250'</img>
+      <p>Argan Hair Care Set</p>
+      <p class= 'price'>35.99</p>
+
+    </div>
+
+    <div class = 'info'>
+      <img src="images/SEVEN.png" alt="SEVEN hair set" width='250' height='250'</img>
+      <p>SEVEN Luxury Hair Set</p>
+      <p class= 'price'>75.00</p>
+
+    </div>
+
+    <div class = 'info'>
+      <img src="images/aussie.png" alt="Aussie Hair Spray" width='250' height='250'</img>
+      <p>Aussie Hair Spray</p>
+      <p class= 'price'>20.00</p>
+
+    </div>
+
+    <div class = 'info'>
+      <img src="images/designline.png" alt="Designline Hair Care for Men" width='250' height='250'</img>
+      <p>Designline Hair Care Kit for Men</p>
+      <p class= 'price'>45.00</p>
+
+    </div>
+
+    <div class = 'info'>
+      <img src="images/woodys.jpg" alt="Woodys Styling Cream for Men" width='250' height='250'</img>
+      <p>Woody's Styling Cream for Men</p>
+      <p class= 'price'>15.00</p>
+
+    </div>
+
+    <div class = 'info'>
+      <img src="images/suave.png" alt="Suave Styling Gel for Men" width='250' height='250'</img>
+      <p>Suave Styling Gel for Men</p>
+      <p class= 'price'>10.00</p>
+
+    </div>
+    </div>
 
 </section>
 

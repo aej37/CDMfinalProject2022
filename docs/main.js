@@ -112,13 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     cursor.continue();
                } else {
                     if(!consultations.firstChild) {
-                        services.textContent = 'Change your appointment request';
+                        services.textContent = 'Change your consulation request';
                          let noSchedule = document.createElement('p');
                          noSchedule.classList.add('text-center');
                          noSchedule.textContent = 'No results Found';
                       consultations.appendChild(noSchedule);
                     } else {
-                        services.textContent = 'Cancel your appointment request'
+                        services.textContent = 'Cancel your consulation request'
                     }
                }
           }

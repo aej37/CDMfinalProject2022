@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
 }
 
+
+.products{
+  text-align: center;
+}
 form, .form-group{
   padding:10px;
   margin:10px 0;
@@ -40,10 +44,10 @@ form, .form-group{
 
 
 
-.footer {
+footer {
     text-align: center;
-    font-size: 0.9rem;
-    background:white;
+    padding-left: 60px;
+    font-size: 1rem;
     }
 
 .navbar-icon{
@@ -90,6 +94,7 @@ section{
 
 .heading{
   padding-bottom: 10px;
+  padding-left: 60px;
   text-align: center;
 }
 .salon-info{
@@ -109,4 +114,37 @@ section{
 
 .og-price, .sale{
   display: inline;
+}
+
+.dark-mode {
+       background-color: black;
+       color: white;
+     }
+ .light-mode {
+       background-color: white;
+       color: black;
+ }
+
+button{
+    font-size: 2vw;
+    margin: 0px;
+    color: black;
+    padding: 1%;
+    border-color: white;
+}
+.service-title{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.service {
+  float: left;
+  width: 33.33%;
+  padding-left: 100px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

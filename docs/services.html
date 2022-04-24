@@ -17,7 +17,7 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link"
-                  href="services.html">Home</a></li>
+                  href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link"
                   href="services.html">Services</a></li>
                   <li class="nav-item"><a class="nav-link"
@@ -27,30 +27,83 @@
               </ul>
           </div>
       </div>
+
+          <button onclick="darkMode()">Darkmode</button>
+          <button onclick="lightMode()">LightMode</button>
+          <script>
+            function darkMode() {
+              var element = document.body;
+              var content = document.getElementById("DarkModetext");
+              element.className = "dark-mode";
+              content.innerText = "Dark Mode is ON";
+            }
+            function lightMode() {
+              var element = document.body;
+              var content = document.getElementById("DarkModetext");
+              element.className = "light-mode";
+              content.innerText = "Dark Mode is OFF";
+            }
+          </script>
     </nav>
 
-    <section>
+<h1 class='service-title'>Services</h1>
+    <div class="row">
+  <div class="service">
 
-     <h1>Hair Services</h1>
 
-   <h2>Men</h2>
-   <ul>
-     <li>Cut & Style: $10.00</li>
-     <li>Boy's Cut and Style: $8.00</li>
-     <li>Foils: $15.00</li>
 
-  </ul>
 
-  <h2> Women </h2>
-  <ul>
-    <li> Blow Dry (long hair): $15.00</li>
-    <li> Blow Dry (short hair): $10.00</li>
-    <li> Cut & Style (long): $20.00</li>
-    <li> Cut & Style (short): $15.00</li>
-    <li> Full Head Foils: $35.00 </li>
-    <li> Half Head Foils: $25.00 </li>
 
-  </ul>
+
+ <h2>Hair Cuts</h2>
+
+    <p> Women's Cut.......................55.00-75.00</p>
+    <p> Men's Cut.........................35.00-55.00</p>
+    <p> Kid's Cut(10 and under)...........25.00</p>
+
+<h2> Hair Styles</h2>
+
+   <p> Wash and Blow Dry....................40.00-50.00</p>
+   <p>Half Updo.............................65.00</p>
+   <p>Full Updo............................95.00</p>
+   <p>Add Braid...........................5.00</p>
+   <p>Add Curl............................5.00</p>
+
+<h2>Hair Color</h2>
+   <p>Color Wash..............................................45.00-60.00</p>
+   <p>Full Glaze.................................................75.00-80.00</p>
+   <p>Retouch....................................................75.00-80.00</p>
+   <p>Partial Highlight........................................90.00-135.00</p>
+   <p>Full Highlight.............................................130.00-175.00</p>
+   <p>Balayage....................................................160.00-200.00</p>
+   <p>Bleach Retouch Double Process.............125.00-150.00</p>
+   <p>Creative Color............................................Variable Prices<p>
+   <p>Corrective Color.........................................Variable Prices<p>
+
+<h2>Add Ons</h2>
+   <p>Deep Conditioning..............................................30.00</p>
+   <p>Perm.................................................105.00</p>
+  </div>
+  <div class="service">
+    <h2>Waxing</h2>
+    <p>Eyebrow Wax.......................................................22.00</p>
+    <p>Chin Wax...............................................................18.00</p>
+    <p>Lip Wax.................................................................15.00</p>
+    <p>Lip & Brow Combo..............................................35.00</p>
+    <p>Full Face................................................................50.00</p>
+
+  </div>
+  <div class="service">
+    <h2>Nails</h2>
+    <p>Gel Manicure With French..................40.00</p>
+    <p>Gel Manicure With Regular Toe Polish............50.00</p>
+    <p>Acrylic Fill With Gel & Regular Toe Polish..........55.00</p>
+    <p>Manicure...................................20.00</p>
+    <p>Manicure With Gel Removal...................25.00</p>
+    <p>Gel Manicure...............................35.00</p>
+    <p>Gel Manicure With Removal..................35.00</p>
+  </div>
+</div>
 
 </section>
 
