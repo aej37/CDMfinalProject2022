@@ -13,35 +13,102 @@ form, .form-group{
   padding:10px;
   margin:10px 0;
 }
-.header {
-  padding: 90px 60px;
-  text-align: center;
-  background-image:url(images/logo.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  color:white;
-  font-size: 30px;
-}
+
   .nav{
     text-align: center;
   }
 
+  .nav-back{
+      background: white;
+      color: #fff;
+  }
+  .navbar-brand{
+    color: #000;
+  }
+  .navbar-brand:hover{
+    color: gray;
+  }
+  .nav-link{
+    color: black;
+  }
+  .nav-link:hover{
+    color:gray;
+  }
+  .navbar-toggler{
+    outline: none!important;
+  }
+
+
+
 .footer {
     text-align: center;
     font-size: 0.9rem;
-    background:#cd853f;
+    background:white;
     }
-.footer .btn-back{
-    background: #fff;
-    color: #00d9ff;
-    }
-.footer .text{
-    color: #000;
-  }
+
 .navbar-icon{
   background-image:url(images/icon.png);
+}
+
+.hcontent {
+  margin-top: 10%;
+  align-items: center;
+  position: absolute;
+  top: 13vw;
+  width: 100vw;
+  left: 50%;
+  margin-left: calc(-50vw);
+  text-align: center;
+  color: white;
+  font-size: 8vw;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px #000000;
+  padding-bottom: 3%;
+}
+
+.header-img{
+  filter: brightness(50%);
+}
+.logo-txt{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 section{
   padding-top: 60px;
 }
+
+.sales-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    padding: 10px;
+    grid-gap: 15px;
+}
+
+.heading{
+  padding-bottom: 10px;
+  text-align: center;
+}
+.salon-info{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding:15px;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-left: 500px;
+  text-align:center;
+}
+
+.number{
+  color:white;
+}
+
+.appt {
+    font-size: 2vw;
+    font-family: 'Mensch';
+    margin: 0px;
+    color: #fff;
+
+  }
