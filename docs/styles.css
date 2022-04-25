@@ -161,3 +161,12 @@ button{
   padding-bottom: 15px;
   padding-right:45px;
 }
+
+.bio{
+  margin: 25px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding:1%
+
+
+}
