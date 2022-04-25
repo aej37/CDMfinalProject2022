@@ -132,19 +132,32 @@ button{
     padding: 1%;
     border-color: white;
 }
-.service-title{
+.title{
   text-align: center;
   padding-top: 100px;
   padding-bottom: 30px;
 }
+
+.p-title{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+}
 .service {
   float: left;
-  width: 33.33%;
-  padding-left: 100px;
+  width: 33%;
+  padding-left: 45px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.my-4{
+  padding-top: 40px;
+  padding-bottom: 15px;
+  padding-right:45px;
 }
