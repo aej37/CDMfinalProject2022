@@ -6,7 +6,7 @@ Asset | Source
 -- | --
 Consultation Form Code | Source from CC: Code with Erum, Fair Use since I am using it for educational purposes: https://codepen.io/EJW4/pen/zYKjOwK
 CSS Bootstrap Code | Source from CC: Free to use under MIT License: https://github.com/twbs/bootstrap/blob/master/LICENSE
-DarK Mode Code | Source from CC: GeeksforGeeks, Fair Use since I am using it for educational purposes: https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/
+Dark Mode Code | Source from CC: GeeksforGeeks, Fair Use since I am using it for educational purposes: https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/
 Sale Icon | Source from CC: Free to use under License Agreement: https://icons8.com/icons/set/sale
 Scissors Icon | Source from CC: Free to use under Licese Agreement: https://icons8.com/icons/set/scissors-circle
 Logo Font |Source from CC: Free commercial font from FontSpace: "HalfbreD Font" by wahyudin: https://www.fontspace.com/halfbred-font-f41327
